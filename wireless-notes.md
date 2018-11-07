@@ -33,8 +33,28 @@
 - Have at least 1 antenna and a port to connect them to a wired network
 - There are the standalone AP’s and also ones that include a built-in router which you can use to connect both wired and wireless clients to the internet
   - These can also be called a wireless router
+  
+##### Difference Between a Router and An Access Point
+
 - Wireless routers can function as access points, but not all access points can work as routers. While routers manage local area networks, communicate with outside network systems, acquire, distribute, and dispatch data in multiple directions, establish a point of connectivity, and ensure security, access points typically only provide access to the router’s established network.
 - An access point, on the other hand, is a sub-device within the local area network that provides another location for devices to connect from and enables more devices to be on the network.
+- The router acts as a hub that sets up a local area network and manages all of the devices and communication in it. An access point, on the other hand, is a sub-device within the local area network that provides another location for devices to connect from and enables more devices to be on the network.
+
+##### NIC
+- Every host that wants to connect to a wireless network needs a NIC
+- You might use an external nic to increase your signal in an area of poor reception
+- What layer of the OSi model (1 & 2)
+
+##### Wireless Antenna
+- Act as both transmitters and receivers
+- There are two types:
+  - Omni directional (point-to-multipoint) 
+    - OMNI- Your car can be parked in any direction and still get same signal reception
+     - Most AP’s use Omni’s because often clients and other AP’s could be located in any direction
+  - Directional or yagi (point-to-point)
+    - Yagi- Television antenna that you had to dial
+    - Yagi’s provide greater range focus all their power in a single direction whereas Omni antennas must disperse the same amount of power in all directions at the same time
+    - Very precise when aligning
   
 #### Standards
 IEEE (Institute of Electrical and Electronics Engineers) created and regulates the wireless standards. The FCC released 3 unlicensed bands for public use: 900MHz, 2.4GHz and 5GHz
@@ -62,7 +82,7 @@ IEEE (Institute of Electrical and Electronics Engineers) created and regulates t
     - Potentially 1 Gbps
     - Multiple transmitters send seperate signals and multiple recievers to recieve separate signals at the same time.
     
-  Note:
+Note:
 1. 802.11a was an early implementation of wireless networking and is not compatible with the Wi-Fi Networks.
 2. b,g, and n are all compatible and make up the Wi-Fi standard. All run on 2.4-GHz frequency
 3. An examples is a previous wireless network at home had an access point that was an 802.11g device, but one of the old laptops had an 802.11b wireless network card. It would still be able to communicate on the network because the two standards are compatible but it will use the slowest speed of 11 Mbps.
