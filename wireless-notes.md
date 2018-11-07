@@ -1,23 +1,76 @@
 ## Wireless Notes
 
-You can create two types of wireless networks
-1. ad hoc mode wireless network
-  - Wireless devices is connected directly to other wirelss devices
+####
+- Wireless started out as a way of sending audio programs through the air we called it ______
+- Then it was used to transmit pictures we called it _ (Television)
+- Wireless will struggle to offer us the same robustness as a wired network can They do offer:
+  - Mobility
+  - Installation speed and simplicity
+  - Felxibility - they can allow access to places
+  - Cost
+  - Security (recently)
+  - Convienence
+  - Scalability
+
+#### You can create two types of wireless networks
+1. Ad hoc mode wireless network
+  - Wireless devices are connected directly to other wireless devices
   - Peer-to-peer 
   - No need for an access point
   - Dont need to purchase access point
-  - Example: users sharing data or play a LAN game together
+  - Example: users sharing data or playing a LAN game together
 2. Infrasturcture mode wireless network
   - Wireless clients are connected to a central wireless access point
   - Wireless client sends data to the access point which then sends data on to the wired network
   - Can control who can connect to wireless network
   
-Standards
-IEEE (Institute of Electrical and Electronics Engineers)
+#### Devices
+##### Access point
+- Connects wireless devices together and allows them to communicate with each other
+- A device that creates a wireless local area network, or WLAN, usually in an office or large building.
+- An access point connects to a wired router, switch, or hub via an Ethernet cable, and projects a Wi-Fi signal to a designated area.
+  - EX: For example, if you want to enable Wi-Fi access in your company's reception area but don’t have a router within range, you can install an access point near the front desk and run an Ethernet cable through the ceiling back to the server room.
+- Have at least 1 antenna and a port to connect them to a wired network
+- There are the standalone AP’s and also ones that include a built-in router which you can use to connect both wired and wireless clients to the internet
+  - These can also be called a wireless router
+- Wireless routers can function as access points, but not all access points can work as routers. While routers manage local area networks, communicate with outside network systems, acquire, distribute, and dispatch data in multiple directions, establish a point of connectivity, and ensure security, access points typically only provide access to the router’s established network.
+- An access point, on the other hand, is a sub-device within the local area network that provides another location for devices to connect from and enables more devices to be on the network.
+  
+#### Standards
+IEEE (Institute of Electrical and Electronics Engineers) created and regulates the wireless standards. The FCC released 3 unlicensed bands for public use: 900MHz, 2.4GHz and 5GHz
 
   802.11a
-    - first wireless satndard that runs the 5-GHz frequency
-   802.11b
-    - has a transfer rate of 11Mbps while usikg a frequency of 2.4GHz
-    - Not compatible with 802.11a networks because they run on different frequencies
+    - First wireless satndard that runs the 5-GHz frequency
     
+  802.11b
+    - has a transfer rate of 11Mbps while using a frequency of 2.4GHz
+    - Not compatible with 802.11a networks because they run on different frequencies
+   
+  802.11g
+    - Increases transfer rate and was designed to be compatible with 802.11b.
+    - The transfer rate of 802.11g devices is 54 Mbps in the 2.4-GHz frequency
+    
+  802.11n
+    - finalized in 2009
+    - The goal is to increase the transfer rate beyond the current standards like 802.11g
+    - Rumored to support transfer rates up to 600 Mpbs but most networking components transfer at 150 Mbps
+    - Uses channel bonding which uses multiple antennas and can transmit data over two channels to achieve more throughput.
+    - Backwards compatible with 802.11a, 802.11b, 802.11g, and can run at both 2.4-GHz or 5-GHz frequencies
+ 
+ 802.11ac
+    - Approved in 2014 and is considered a high-throughput wireless standard that runs at the 5-GHz frequency range.
+    - Potentially 1 Gbps
+    - Multiple transmitters send seperate signals and multiple recievers to recieve separate signals at the same time.
+    
+  Note:
+1. 802.11a was an early implementation of wireless networking and is not compatible with the Wi-Fi Networks.
+2. b,g, and n are all compatible and make up the Wi-Fi standard. All run on 2.4-GHz frequency
+3. An examples is a previous wireless network at home had an access point that was an 802.11g device, but one of the old laptops had an 802.11b wireless network card. It would still be able to communicate on the network because the two standards are compatible but it will use the slowest speed of 11 Mbps.
+  
+   ![Chart of standards](https://github.com/alyssaknight/Wireless/blob/master/wireless/chart.PNG)
+   
+ ### Channels
+- 2.4GHz is a frequency range. Each frequency in the range is known as a channel.
+- 802.11b/g/n Wi-Fi radios can transmit in the 2.4 GHz band with a total of fourteen available channels. In the US only eleven of those channels are legally available and only 13 are available in Europe.
+- It is likely to get interference from the channels if all of your devices are on the same channel. To fix this you can experiment by changing the channels used by your devices
+ 
