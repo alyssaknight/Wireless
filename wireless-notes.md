@@ -1,7 +1,7 @@
 ## Wireless Notes
 
-####
-- Wireless started out as a way of sending audio programs through the air we called it ______
+#### Introduction
+- Wireless started out as a way of sending audio programs through the air we called it ______ (Radio)
 - Then it was used to transmit pictures we called it _ (Television)
 - Wireless will struggle to offer us the same robustness as a wired network can They do offer:
   - Mobility
@@ -82,7 +82,7 @@ IEEE (Institute of Electrical and Electronics Engineers) created and regulates t
     - Potentially 1 Gbps
     - Multiple transmitters send seperate signals and multiple recievers to recieve separate signals at the same time.
     
-Note:
+#### Note:
 1. 802.11a was an early implementation of wireless networking and is not compatible with the Wi-Fi Networks.
 2. b,g, and n are all compatible and make up the Wi-Fi standard. All run on 2.4-GHz frequency
 3. An examples is a previous wireless network at home had an access point that was an 802.11g device, but one of the old laptops had an 802.11b wireless network card. It would still be able to communicate on the network because the two standards are compatible but it will use the slowest speed of 11 Mbps.
@@ -93,4 +93,69 @@ Note:
 - 2.4GHz is a frequency range. Each frequency in the range is known as a channel.
 - 802.11b/g/n Wi-Fi radios can transmit in the 2.4 GHz band with a total of fourteen available channels. In the US only eleven of those channels are legally available and only 13 are available in Europe.
 - It is likely to get interference from the channels if all of your devices are on the same channel. To fix this you can experiment by changing the channels used by your devices
- 
+
+### Authentication and Encryption
+#### WEP
+- Wired Equivalent Privacy designed to give wireless the level of security equivalent to that of wired network
+- Desigend to add security to wireless networking by requiring anyone wishing to connect to the wireless network to input a wireless key
+- WEP is now a deprecated protocol and should not be used, however it still is.
+- Uses RC4 encryption protocol as the symettric encryption algorithm using 64-bit or 128-bit encryption
+- Note* Talk about symmetric encryption
+- Encryption key is based on a 24-bit initialized vector (IV), a value that is randomly generated and sent in the header of the packet.
+- It is used with a 40-bit or 104-bit key that is then configured on wireless access point and the wireless client.
+- WEP has HUGE flaws in its implementation of encryption and key usage that as a result both 64-bit and 18-bit WEP have been cracked
+- There are only 16,777,216 possible IV's so a hacker can capture enough traffic and crack WEP
+#### WPA
+- Wi-Fi protected access was designed to improve upon security in WEP
+- Uses a 128-bit key and TKIP (Temperal Key Intergity Protocol) which is a protocol used to change the encryption keys for eevery packet that is sent.
+- Uses EAP protocol (Extensive Authentication Protocol)
+- EAP
+  - A very secure authentication protocol that supports a number of authentication methods such as kerberos, token cards, certificates and smart cards
+  - LEAP
+  - PEAP
+  - EAP-TLS
+  - EAP-TTLS
+- WPA operates in the follwoing modes: (pg. 409)
+  - WPA Personal
+  - WPA Enterprise
+  - Open
+#### WPA2
+- Improves on the security of WPA 
+- Uses the counter mode with cipher block chaining message authentication protocol (CCMP or CCM) for data privacy, integrity and authentication
+- Uses AES (Advanced Encryption Standard) for encryption of wireless traffic instead of TKIP
+- Uses RADIUS
+
+#### SSID
+- The Service Set Identifier is the name that you give wireless networks and in order for anyone to connect they need to know the SSID
+- Routers are configured to advertise their SSID by default so even if you change the SSID to something hard to guess, the router will advertise the name
+- You should configure your router to not broadcast the SSID
+
+#### Wireless Security
+- The original 802.11 comittee never thought that wireless devices would ever outnumber wired devices 
+- To secure your wireless router consider changing the settings such as the admin password, the SSID, MAC filtering, etc.
+- War driving is driving around with a laptop a wireless nic and a high-gain antenna trying to locate open AP's
+- In a secured wireless connection, internet data is sent in the form of encrypted packets. These packets are encrypted with network security keys. If you somehow manage to get hold of the key for a particular wireless network you virtually have access to the wireless internet connection.
+- Open access mode - security features are turned off
+- SSID's
+  - open shared-key authentication, static WEP (wired Equivalent Privacy) and optional MAC authentication
+  - An SSID prevents access by any client device that does not have the SSID
+  - However by default an access point broadcasts its SSID
+  - Even if the SSID broadcast is off, a bad person could monitor the network and discover a client connecting to an access point
+  - Why? Because that information is regulated by the original 802.11 speciffications and must be transmitted in clear text
+- Shared Key Authentication
+  - The access point sends the client device a challenge-text packet that the client must then encrypt with the correct WEP key and return to access point
+  - All an intruder has to do is detect both the clear text challenge and the same challenge encrypted with a WEP key and decipher the WEP Key
+    - This is not really used anymore in todays WLAN's
+- MAC Addresses
+  - MAC addresses can be manually configured in the AP of the hosts and denied access in the filter table
+  - All mac layer information is sent in the clear so anyone equipped with a wireless sniffer can just read the packets sent to the access point and then spoof their MAC Address
+- WPA and WPA 2 Pre-Shared Key
+  - Another form of security that is added on
+  - Wi-Fi protected Access is a standard developed by the Wi-Fi alliance
+  - The PSK verifies users via a password or identifying code (passphrase) on both the client machine and access point
+  - A client can only gain access if its password matches the access points password
+- 
+
+
+
+
