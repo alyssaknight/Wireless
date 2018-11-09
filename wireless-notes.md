@@ -58,26 +58,25 @@
   
 #### Standards
 IEEE (Institute of Electrical and Electronics Engineers) created and regulates the wireless standards. The FCC released 3 unlicensed bands for public use: 900MHz, 2.4GHz and 5GHz
-
-  802.11a
+- 802.11a
     - First wireless satndard that runs the 5-GHz frequency
     
-  802.11b
+ - 802.11b
     - has a transfer rate of 11Mbps while using a frequency of 2.4GHz
     - Not compatible with 802.11a networks because they run on different frequencies
    
-  802.11g
+- 802.11g
     - Increases transfer rate and was designed to be compatible with 802.11b.
     - The transfer rate of 802.11g devices is 54 Mbps in the 2.4-GHz frequency
     
-  802.11n
+- 802.11n
     - finalized in 2009
     - The goal is to increase the transfer rate beyond the current standards like 802.11g
     - Rumored to support transfer rates up to 600 Mpbs but most networking components transfer at 150 Mbps
     - Uses channel bonding which uses multiple antennas and can transmit data over two channels to achieve more throughput.
     - Backwards compatible with 802.11a, 802.11b, 802.11g, and can run at both 2.4-GHz or 5-GHz frequencies
  
- 802.11ac
+ - 802.11ac
     - Approved in 2014 and is considered a high-throughput wireless standard that runs at the 5-GHz frequency range.
     - Potentially 1 Gbps
     - Multiple transmitters send seperate signals and multiple recievers to recieve separate signals at the same time.
@@ -154,7 +153,7 @@ IEEE (Institute of Electrical and Electronics Engineers) created and regulates t
   - Wi-Fi protected Access is a standard developed by the Wi-Fi alliance
   - The PSK verifies users via a password or identifying code (passphrase) on both the client machine and access point
   - A client can only gain access if its password matches the access points password
-- 
+
 
 
 
