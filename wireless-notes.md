@@ -130,7 +130,7 @@ IEEE (Institute of Electrical and Electronics Engineers) created and regulates t
 - You should configure your router to not broadcast the SSID
 - A router that is not broadcasting its SSID will show up as Hidden and will require you to know the SSID and password
 
- [Wireless SSIDS being broadcasted](https://github.com/alyssaknight/Wireless/blob/master/wireless/wireless.png)
+![Wireless SSIDS being broadcasted](https://github.com/alyssaknight/Wireless/blob/master/wireless/wireless.png)
  
 - open shared-key authentication, static WEP (wired Equivalent Privacy) and optional MAC authentication
 - An SSID prevents access by any client device that does not have the SSID
