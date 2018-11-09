@@ -128,19 +128,23 @@ IEEE (Institute of Electrical and Electronics Engineers) created and regulates t
 - The Service Set Identifier is the name that you give wireless networks and in order for anyone to connect they need to know the SSID
 - Routers are configured to advertise their SSID by default so even if you change the SSID to something hard to guess, the router will advertise the name
 - You should configure your router to not broadcast the SSID
+- A router that is not broadcasting its SSID will show up as Hidden and will require you to know the SSID and password
+
+ [Wireless SSIDS being broadcasted](https://github.com/alyssaknight/Wireless/blob/master/wireless/wireless.png)
+ 
+- open shared-key authentication, static WEP (wired Equivalent Privacy) and optional MAC authentication
+- An SSID prevents access by any client device that does not have the SSID
+- However by default an access point broadcasts its SSID
+- Even if the SSID broadcast is off, a bad person could monitor the network and discover a client connecting to an access point
+- Why? Because that information is regulated by the original 802.11 speciffications and must be transmitted in clear text
+  
 
 #### Wireless Security
 - The original 802.11 comittee never thought that wireless devices would ever outnumber wired devices 
 - To secure your wireless router consider changing the settings such as the admin password, the SSID, MAC filtering, etc.
 - War driving is driving around with a laptop a wireless nic and a high-gain antenna trying to locate open AP's
 - In a secured wireless connection, internet data is sent in the form of encrypted packets. These packets are encrypted with network security keys. If you somehow manage to get hold of the key for a particular wireless network you virtually have access to the wireless internet connection.
-- Open access mode - security features are turned off
-- SSID's
-  - open shared-key authentication, static WEP (wired Equivalent Privacy) and optional MAC authentication
-  - An SSID prevents access by any client device that does not have the SSID
-  - However by default an access point broadcasts its SSID
-  - Even if the SSID broadcast is off, a bad person could monitor the network and discover a client connecting to an access point
-  - Why? Because that information is regulated by the original 802.11 speciffications and must be transmitted in clear text
+- Open access mode - security features are turned off 
 - Shared Key Authentication
   - The access point sends the client device a challenge-text packet that the client must then encrypt with the correct WEP key and return to access point
   - All an intruder has to do is detect both the clear text challenge and the same challenge encrypted with a WEP key and decipher the WEP Key
